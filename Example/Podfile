@@ -1,0 +1,12 @@
+target 'demoPod', :exclusive => true do
+  pod "demoPod", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "demoPod", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'EXPMatchers+FBSnapshotTest'
+end
